@@ -33,7 +33,7 @@ public class ItemsController : ControllerBase
     {
         var existingItem = Items.SingleOrDefault(x => x.Id == id);
 
-        var updatedItem = existingItem with
+        var updatedItem = existingItem! with
         {
             Name = updateItem.Name,
             Description = updateItem.Description,
